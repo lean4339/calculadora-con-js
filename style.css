@@ -1,0 +1,124 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    background-color: aliceblue;
+    width: 20rem;
+    color: black;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 10px 10px 10px lightblue;
+    text-transform: capitalize;
+    display: none;
+}
+#calculadora{
+    width: 30rem;
+    height: 35rem;
+    border-radius: .5rem;
+    background-color: white;
+    border: 2px solid aliceblue;
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(6, 5rem);
+    padding: 1rem;
+    box-shadow: 10px 10px 10px lightblue;
+    margin-top: 1rem;
+    
+
+}
+#operaciones{
+    width: 100%;
+    height: 2.5rem;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem;
+    margin-bottom: .2rem;
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+ul{
+    list-style: none;
+    width: 100%;
+    height: 70%;
+    grid-column: 1/5;
+    grid-row: 2/7;
+    display: grid;
+    grid-template-columns: repeat(4,5rem);
+    grid-template-rows:repeat(4,5rem);
+    gap: .5rem;
+    padding: 3rem;
+
+    
+    
+}
+#numeroUno{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+#numeroDos{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#numeroTres{
+
+}
+#signoMas{
+
+}
+
+li{
+    width: 4rem;
+    height: 4rem;
+    background-color: blue;
+    box-shadow: 10px 10px 10px lightblue;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#calculadora ul li{
+    background-color: aliceblue;
+    font-weight: bold;
+    transition: .1s;
+}
+#calculadora ul li:active{
+    background-color: rgb(135, 201, 223);
+    box-shadow: 10px 10px 10px black;
+    
+}
+#numero1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+#numero2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#borrar{
+    width: 100%;
+    padding: 1rem;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px lightblue;
+    text-transform: capitalize;
+    grid-row: 7/8;
+    grid-column: 1/6;
+    transition: .1s;
+}
+#borrar:active{
+    background-color:rgb(135, 201, 223) ;
+    box-shadow: 10px 10px 10px black;
+}
